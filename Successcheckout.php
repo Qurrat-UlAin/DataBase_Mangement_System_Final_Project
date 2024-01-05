@@ -12,14 +12,14 @@ if (isset($_SESSION['userEmail'])) {
        $mail->isSMTP();                       
        $mail->Host = 'smtp.gmail.com'; 
        $mail->SMTPAuth = true;                  
-       $mail->Username = 'qurrat098@gmail.com';          
-       $mail->Password = 'qurrat1100';                
+       $mail->Username = '';          
+       $mail->Password = '';                
        $mail->SMTPSecure = 'tls';                
        $mail->Port = 587;                       
 
        //Recipients
        $userEmail = $_SESSION['userEmail']; 
-       $mail->setFrom('qurrat098@gmail.com', 'Developers');
+       $mail->setFrom('', 'Developers');
        $mail->addAddress($userEmail); 
 
        //Content
